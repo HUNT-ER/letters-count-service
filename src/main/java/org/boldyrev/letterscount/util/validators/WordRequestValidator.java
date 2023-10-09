@@ -1,6 +1,6 @@
 package org.boldyrev.letterscount.util.validators;
 
-import jakarta.validation.ValidationException;
+import org.boldyrev.letterscount.exceptions.ValidationException;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 

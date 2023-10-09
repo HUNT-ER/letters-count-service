@@ -15,7 +15,7 @@ public abstract class CustomValidator implements Validator {
         StringBuilder builder = new StringBuilder();
 
         builder.append(entityClass)
-            .append(" not saved: ");
+            .append(" not processed: ");
 
         if (errors.hasFieldErrors()) {
             errors.getFieldErrors().forEach(e ->
