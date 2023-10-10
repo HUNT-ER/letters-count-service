@@ -33,6 +33,12 @@ public class WordRequestsController {
         this.validator = validator;
     }
 
+    /**
+     * POST endpoint для подсчёта символов в строке
+     *
+     * @param isCaseSensitive флаг для установки режима подсчёта символов с учетом регистра или без (default true)
+     * @return подсчитанные символы в строке
+     */
     @PostMapping
     public ResponseEntity<WordRequestDto> countLetters(
         @RequestParam(name = "case-sensitive", defaultValue = "true") Boolean isCaseSensitive,
