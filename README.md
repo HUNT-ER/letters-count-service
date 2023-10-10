@@ -17,23 +17,23 @@ Response will be in decending order by count letters.
 ```agsl
 request body:
 {
-    "input_string": "This Is Test String"
+    "input_string": "This Is A Test String"
 }
 ```
 
 ```agsl
 response body with case-sensitive flag == true or without flag:
 {
-    "input_string": "This Is Test String",
-    "letters_count": "' ': 3,'s': 3,'t': 2,'T': 2,'i': 2,'r': 1,'S': 1,'e': 1,'g': 1,'h': 1,'I': 1,'n': 1"
+    "input_string": "This Is A Test String",
+    "letters_count": "' ': 4,'s': 3,'t': 2,'T': 2,'i': 2,'A': 1,'r': 1,'S': 1,'e': 1,'g': 1,'h': 1,'I': 1,'n': 1"
 }
 ```
 
 ```agsl
 response body with case-sensitive flag == false:
 {
-    "input_string": "This Is Test String",
-    "letters_count": "'s': 4,'t': 4,' ': 3,'i': 3,'r': 1,'e': 1,'g': 1,'h': 1,'n': 1"
+    "input_string": "This Is A Test String",
+    "letters_count": "' ': 4,'s': 4,'t': 4,'i': 3,'a': 1,'r': 1,'e': 1,'g': 1,'h': 1,'n': 1"
 }
 ```
 
